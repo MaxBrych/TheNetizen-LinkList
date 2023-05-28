@@ -18,7 +18,7 @@ export default function Home() {
           The Netizen
         </h1>
         <p className="mb-5 text-sm font-medium text-center text-gray-600">
-          Links to helpful resources for Netizens.
+          Links to helpful resources for Netizens
         </p>
         <LinkList />
       </div>
