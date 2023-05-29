@@ -1,4 +1,3 @@
-"use client";
 import { ChakraProvider } from "@chakra-ui/react";
 import "./globals.css";
 import { Inter, Space_Grotesk } from "next/font/google";
