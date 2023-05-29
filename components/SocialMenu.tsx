@@ -5,6 +5,7 @@ import {
   MenuList,
   Image,
   IconButton,
+  Box,
 } from "@chakra-ui/react";
 import React from "react";
 import { FiFigma, FiGithub } from "react-icons/fi";
@@ -21,20 +22,23 @@ export default function SocialMenu() {
         colorScheme="grey"
       />
       <MenuList>
-        <MenuItem
-          minH="48px"
-          className="flex flex-col items-center justify-center gap-1 rounded-lg hover:bg-gray-100 "
-        >
-          <IconButton aria-label="Search database" icon={<FiFigma />} />
-          <span>Figma</span>
-        </MenuItem>
-        <MenuItem
-          minH="40px"
-          className="flex flex-col items-center justify-center gap-1 rounded-lg hover:bg-gray-100 "
-        >
-          <IconButton aria-label="Search database" icon={<FiGithub />} />
-          <span>GitHub</span>
-        </MenuItem>
+        <Box display="grid" gridTemplateColumns="repeat(3, 1fr)" gap={4}>
+          <MenuItem
+            minH="48px"
+            className="flex flex-col items-center justify-center gap-1 rounded-lg hover:bg-gray-100 "
+          >
+            <IconButton aria-label="Search database" icon={<FiFigma />} />
+            <span>Figma</span>
+          </MenuItem>
+          <MenuItem
+            minH="40px"
+            className="flex flex-col items-center justify-center gap-1 rounded-lg hover:bg-gray-100 "
+          >
+            <IconButton aria-label="Search database" icon={<FiGithub />} />
+            <span>GitHub</span>
+          </MenuItem>
+          {/* More MenuItems here */}
+        </Box>
       </MenuList>
     </Menu>
   );
