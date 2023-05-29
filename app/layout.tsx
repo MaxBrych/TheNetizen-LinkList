@@ -1,5 +1,8 @@
+"use client";
+import { ChakraProvider } from "@chakra-ui/react";
 import "./globals.css";
 import { Inter, Space_Grotesk } from "next/font/google";
+import { CacheProvider } from "@chakra-ui/next-js";
 
 const inter = Inter({ subsets: ["latin"] });
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
@@ -16,7 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={spaceGrotesk.className}>{children}</body>
+      <ChakraProvider>
+        <body className={inter.className}>{children}</body>
+      </ChakraProvider>
     </html>
   );
 }
