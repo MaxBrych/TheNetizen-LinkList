@@ -1,5 +1,5 @@
 "use client";
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
 import "./globals.css";
 import { Inter, Space_Grotesk } from "next/font/google";
 
@@ -14,6 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ChakraProvider>
+        <ColorModeScript initialColorMode="light" />
         <body className={inter.className}>{children}</body>
       </ChakraProvider>
     </html>

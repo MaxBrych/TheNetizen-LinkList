@@ -14,6 +14,7 @@ import {
   ModalOverlay,
   useDisclosure,
   Stack,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { useStyleConfig } from "@chakra-ui/react";
 
@@ -52,12 +53,21 @@ export default function SubscribeModel() {
 
     setLoading(false);
   };
+  const bg = useColorModeValue("white", "gray.900");
+  const borderColor = useColorModeValue("gray.200", "gray.700");
 
   return (
     <>
-      <Button leftIcon={<BiBell />} onClick={onOpen} fontSize={14}>
-        {" "}
-        Subscribe
+      <Button
+        borderRadius="full"
+        bg={bg}
+        borderWidth={1}
+        borderColor={borderColor}
+        gap={1}
+        onClick={onOpen}
+        fontSize={14}
+      >
+        <BiBell size={18} /> Subscribe
       </Button>
 
       <Modal

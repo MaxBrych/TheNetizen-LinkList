@@ -2,14 +2,18 @@
 import Header from "@/components/Header";
 import LinkList from "@/components/LinkList";
 import SubscribeModel from "@/components/SubscribeModel";
-import { Button } from "@chakra-ui/react";
+import { Button, Container, Stack, useColorModeValue } from "@chakra-ui/react";
 
 import Image from "next/image";
 import React from "react";
 
 export default function Home() {
+  const bg = useColorModeValue("gray.50", "blackAlpha.900");
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen p-4 bg-white ">
+    <Stack
+      bgColor={bg}
+      className="flex flex-col items-center justify-center min-h-screen p-4 "
+    >
       <div className="flex flex-col items-center w-full max-w-sm min-h-screen">
         <Header />
         <Image
@@ -29,6 +33,6 @@ export default function Home() {
 
         <LinkList />
       </div>
-    </main>
+    </Stack>
   );
 }
