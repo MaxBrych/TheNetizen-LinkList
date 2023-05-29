@@ -15,6 +15,8 @@ import {
   useDisclosure,
   Stack,
 } from "@chakra-ui/react";
+import { useStyleConfig } from "@chakra-ui/react";
+
 import { AxiosError } from "axios";
 import { BiBell } from "react-icons/bi";
 

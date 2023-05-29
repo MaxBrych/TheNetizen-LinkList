@@ -7,6 +7,7 @@ import {
   IconButton,
 } from "@chakra-ui/react";
 import React from "react";
+import { FiFigma, FiGithub } from "react-icons/fi";
 import { IoApps } from "react-icons/io5";
 
 export default function SocialMenu() {
@@ -20,25 +21,19 @@ export default function SocialMenu() {
         colorScheme="grey"
       />
       <MenuList>
-        <MenuItem minH="48px">
-          <Image
-            boxSize="2rem"
-            borderRadius="full"
-            src="https://placekitten.com/100/100"
-            alt="Fluffybuns the destroyer"
-            mr="12px"
-          />
-          <span>Fluffybuns the Destroyer</span>
+        <MenuItem
+          minH="48px"
+          className="flex flex-col items-center justify-center gap-1 rounded-lg hover:bg-gray-100 "
+        >
+          <IconButton aria-label="Search database" icon={<FiFigma />} />
+          <span>Figma</span>
         </MenuItem>
-        <MenuItem minH="40px">
-          <Image
-            boxSize="2rem"
-            borderRadius="full"
-            src="https://placekitten.com/120/120"
-            alt="Simon the pensive"
-            mr="12px"
-          />
-          <span>Simon the pensive</span>
+        <MenuItem
+          minH="40px"
+          className="flex flex-col items-center justify-center gap-1 rounded-lg hover:bg-gray-100 "
+        >
+          <IconButton aria-label="Search database" icon={<FiGithub />} />
+          <span>GitHub</span>
         </MenuItem>
       </MenuList>
     </Menu>
