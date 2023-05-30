@@ -11,6 +11,7 @@ import {
 import Link from "next/link";
 import React from "react";
 import { FiFigma, FiGithub, FiTwitter } from "react-icons/fi";
+import { BsDiscord } from "react-icons/bs";
 import { IoApps } from "react-icons/io5";
 
 export default function SocialMenu() {
@@ -81,6 +82,19 @@ export default function SocialMenu() {
                 icon={<FiTwitter size={20} />}
               />
               <span className="text-xs">Twitter</span>
+            </Link>
+          </MenuItem>
+          <MenuItem _hover={{ bg: hoverBg }} minH="48px">
+            <Link
+              className="flex flex-col items-center justify-center gap-1 rounded-lg hover:bg-[#edf2f7] "
+              href="https://www.figma.com/file/OVyBucfTojq3N3cc1XIdVJ/The-Netizen?type=design&node-id=402%3A243&t=MPJIv2vl5mDTzQi4-1"
+            >
+              <IconButton
+                _hover={{ bg: "none" }}
+                aria-label="Search database"
+                icon={<BsDiscord size={20} />}
+              />
+              <span className="text-xs">Figma</span>
             </Link>
           </MenuItem>
         </Box>
