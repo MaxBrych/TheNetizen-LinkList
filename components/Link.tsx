@@ -32,7 +32,7 @@ export default function LinkItem({ title, url, id, alt, icon }: Link) {
           <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-[#f7fafc]">
             <img className="w-6 h-6 " src={icon} alt={alt} />
           </div>
-          <h2 className={` text-m  text-black font-bold`}>{title} </h2>
+          <h2 className={` text-sm  text-black font-bold`}>{title} </h2>
         </div>
         <FiExternalLink className="w-8 h-8 p-2 text-black rounded-xl " />
       </Link>
