@@ -36,12 +36,11 @@ export default function SocialMenu() {
           gridTemplateColumns="repeat(3, 1fr)"
           gap={4}
         >
-          <MenuItem
-            _hover={{ bg: hoverBg }}
-            minH="48px"
-            className="flex flex-col items-center justify-center gap-1 rounded-lg hover:bg-[#edf2f7] "
-          >
-            <Link href="https://www.figma.com/file/OVyBucfTojq3N3cc1XIdVJ/The-Netizen?type=design&node-id=402%3A243&t=MPJIv2vl5mDTzQi4-1">
+          <MenuItem _hover={{ bg: hoverBg }} minH="48px">
+            <Link
+              className="flex flex-col items-center justify-center gap-1 rounded-lg hover:bg-[#edf2f7] "
+              href="https://www.figma.com/file/OVyBucfTojq3N3cc1XIdVJ/The-Netizen?type=design&node-id=402%3A243&t=MPJIv2vl5mDTzQi4-1"
+            >
               <IconButton
                 _hover={{ bg: "none" }}
                 aria-label="Search database"
@@ -55,7 +54,10 @@ export default function SocialMenu() {
             minH="40px"
             className="flex flex-col items-center justify-center gap-1 rounded-lg hover:bg-[#edf2f7] "
           >
-            <Link href="https://github.com/The-Netizen-Labs">
+            <Link
+              className="flex flex-col items-center justify-center gap-1 rounded-lg hover:bg-[#edf2f7] "
+              href="https://github.com/The-Netizen-Labs"
+            >
               <IconButton
                 _hover={{ bg: "none" }}
                 aria-label="Search database"
@@ -69,7 +71,10 @@ export default function SocialMenu() {
             minH="40px"
             className="flex flex-col items-center justify-center gap-1 rounded-lg hover:bg-[#edf2f7] "
           >
-            <Link href="https://twitter.com/thenetizenxyz">
+            <Link
+              className="flex flex-col items-center justify-center gap-1 rounded-lg hover:bg-[#edf2f7] "
+              href="https://twitter.com/thenetizenxyz"
+            >
               <IconButton
                 _hover={{ bg: "none" }}
                 aria-label="Search database"
