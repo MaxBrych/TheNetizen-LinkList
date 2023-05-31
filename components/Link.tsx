@@ -7,20 +7,20 @@ import { Link } from "@chakra-ui/next-js";
 
 interface Link {
   title: string;
-  url: string;
+  link: string;
   id: string;
   alt: string;
   icon: string;
 }
 
-export default function LinkItem({ title, url, id, alt, icon }: Link) {
+export default function LinkItem({ title, link, id, alt, icon }: Link) {
   const [isHovered, setIsHovered] = React.useState(false);
   const bg = useColorModeValue("white", "gray.900");
 
   return (
     <motion.div className="w-full">
       <Link
-        href={url}
+        href={link}
         background={bg}
         className="flex items-center justify-between gap-1 px-2 py-2 transition-colors border rounded-lg hover:border-transparent border-1 hover:shadow-md hover:cursor-pointer group hover:border-gray-200 "
         target="_blank"

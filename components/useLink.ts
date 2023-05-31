@@ -6,7 +6,7 @@ const fetcher = (query: string) => client.fetch(query);
 export const useLink = () => {
   const query = `*[_type == "link"] {
     title,
-      url,
+      link,
       icon,
       alt
   }
