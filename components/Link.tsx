@@ -20,9 +20,7 @@ export default function LinkItem({ title, url, id, alt, icon }: Link) {
   return (
     <motion.div className="w-full">
       <Link
-        href={
-          "https://www.figma.com/file/OVyBucfTojq3N3cc1XIdVJ/The-Netizen?type=design&node-id=402%3A243&t=MPJIv2vl5mDTzQi4-1"
-        }
+        href={icon}
         background={bg}
         className="flex items-center justify-between gap-1 px-2 py-2 transition-colors border rounded-lg hover:border-transparent border-1 hover:shadow-md hover:cursor-pointer group hover:border-gray-200 "
         target="_blank"
