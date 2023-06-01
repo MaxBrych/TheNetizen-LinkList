@@ -19,7 +19,7 @@ export default function LinkList() {
         (link: {
           id: string | undefined;
           title: string | undefined;
-          url: string;
+          link: string;
           alt: any;
           icon: string;
         }) => (
@@ -27,7 +27,7 @@ export default function LinkList() {
             key={link.id}
             title={link.title!} // assert that title will not be undefined
             icon={urlFor(link.icon).url()}
-            url={link.url}
+            link={link.link}
             alt={link.alt}
             id={""}
           />
